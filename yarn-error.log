@@ -1,0 +1,59 @@
+Arguments: 
+  /Users/matthewhill/.nvm/versions/node/v14.18.1/bin/node /Users/matthewhill/.yarn/bin/yarn.js add next-transpile-modules
+
+PATH: 
+  /Users/matthewhill/.yarn/bin:/Users/matthewhill/.config/yarn/global/node_modules/.bin:/Users/matthewhill/.nvm/versions/node/v14.18.1/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/Users/matthewhill/.yarn/bin:/Users/matthewhill/.config/yarn/global/node_modules/.bin:/Users/matthewhill/.nvm/versions/node/v14.18.1/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://npm.pkg.github.com/@matthill8286%2fatomic-ui: Your request could not be authenticated by the GitHub Packages service. Please ensure your access token is valid and has the appropriate scopes configured.
+      at Request.params.callback [as _callback] (/Users/matthewhill/.yarn/lib/cli.js:67031:18)
+      at Request.self.callback (/Users/matthewhill/.yarn/lib/cli.js:140885:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/Users/matthewhill/.yarn/lib/cli.js:141857:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (/Users/matthewhill/.yarn/lib/cli.js:141779:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1334:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "dev": "next",
+      "build": "next build",
+      "start": "next start"
+    },
+    "dependencies": {
+      "@matthill8286/atomic-ui": "^1.3.42",
+      "next": "latest",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-is": "^17.0.2",
+      "styled-components": "^5.2.3"
+    },
+    "devDependencies": {
+      "@types/node": "15.0.0",
+      "@types/react": "17.0.4",
+      "@types/react-dom": "17.0.3",
+      "@types/styled-components": "5.1.9",
+      "babel-plugin-styled-components": "^1.12.0",
+      "typescript": "4.2.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
