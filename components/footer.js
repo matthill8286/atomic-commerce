@@ -83,7 +83,7 @@ function Footer({ categories = [], collections = [] }) {
               ) : null}
             </div>
           </div>
-          <div className="mt-12 xl:mt-0">
+          {/* <div className="mt-12 xl:mt-0">
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Language &amp; Currency
             </h3>
@@ -108,26 +108,7 @@ function Footer({ categories = [], collections = [] }) {
                 }))}
               />
             </form>
-          </div>
-        </div>
-        <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            <Link href="https://twitter.com/graphcms">
-              <a className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">Twitter</span>
-                <TwitterIcon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            </Link>
-            <Link href="https://github.com/GraphCMS">
-              <a className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">GitHub</span>
-                <GitHubIcon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            </Link>
-          </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {currentYear} GraphCMS GmbH. All rights reserved.
-          </p>
+          </div> */}
         </div>
       </div>
     </footer>

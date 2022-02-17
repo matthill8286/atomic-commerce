@@ -1,11 +1,8 @@
 import ProductCard from '@/components/product-card'
+import { Cell, Row } from '@matthill8286/atomic-ui'
 
 function ProductGrid({ products }) {
-  return (
-    <div className="gap-8 grid sm:grid-cols-2 lg:grid-cols-3">
-      {products.map(ProductCard)}
-    </div>
-  )
+  return <Row>{products.map(ProductCard)}</Row>
 }
 
 export default ProductGrid

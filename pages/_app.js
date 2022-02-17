@@ -5,16 +5,21 @@ import Layout from '@/components/layout'
 
 import 'tailwindcss/tailwind.css'
 
+import { ThemeProvider } from 'styled-components'
+import { saiyanTheme } from '@matthill8286/atomic-ui'
+
 function App({ Component, pageProps }) {
   console.log('>> logging', { pageProps })
   return (
-    <SettingsProvider>
-      <CartProvider>
-        <Layout {...pageProps}>
-          <Component {...pageProps} />
-        </Layout>
-      </CartProvider>
-    </SettingsProvider>
+    <ThemeProvider theme={saiyanTheme}>
+      <SettingsProvider>
+        <CartProvider>
+          <Layout {...pageProps}>
+            <Component {...pageProps} />
+          </Layout>
+        </CartProvider>
+      </SettingsProvider>
+    </ThemeProvider>
   )
 }
 
